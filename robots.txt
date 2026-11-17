@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+# Simulated public archive for a fictional OSINT exercise.

@@ -1,0 +1,103 @@
+# NORTHLAKE ARCHIVE — FICTIONAL OSINT CHALLENGE
+
+Welcome to the Northlake Archive, a simulated document research portal containing historical therapy session records.
+
+Your objective is to investigate the archive, uncover information hidden within its documents and digital assets, and recover the final CTF flag.
+
+**Getting Started**
+
+Open the Northlake Archive website using the URL provided by your event organizer.
+
+You may use the archive's search functionality, inspect HTML source code, download attachments, and use external analysis tools to complete the challenges.
+
+## Challenge Questions
+
+**1. The Accident — Document Investigation**
+
+Search the archive for Alex Turner's car accident.
+
+**Question:** In what month and year did the accident occur?
+
+**2. The Hidden Incident Reference — HTML Metadata**
+
+An internal incident reference was created following Alex Turner's October 2017 accident. Although this reference does not appear in the visible therapy transcript, it was preserved in the archive's HTML metadata.
+
+**Question:** What is the internal incident reference number associated with the accident?
+
+**3. The Photograph — EXIF Metadata**
+
+Find Alex's March 2019 reunion in New York and the therapy session that follows it.
+
+Locate and download the associated photograph, Exhibit 19-B (`exhibit-19b.jpg`).
+
+Inspect the photograph's EXIF metadata, particularly its Image Description field.
+
+**Question:** What location is identified in the photograph's metadata?
+
+**4. The Unexpected Encounter — Document Investigation**
+
+Find the subsequent March 2019 therapy session describing Alex's unexpected encounter with the other driver involved in his accident.
+
+**Question:** At which store did this encounter take place?
+
+**5. The Relationship Milestone — Timeline Investigation**
+
+Locate Alex's July 2023 therapy session and examine his discussion of his relationship.
+
+**Question:** What major relationship milestone was Alex planning?
+
+**6. The Pregnancy — Document Investigation**
+
+Find Alex's March 2025 therapy session discussing unexpected news about his family.
+
+**Question:** How many babies were Alex and his partner expecting?
+
+**7. The Hidden Message — PNG Steganography**
+
+Locate the June 2025 therapy session discussing complications during the pregnancy.
+
+**Part A:** What medical condition is mentioned in the session?
+
+**Part B:** Download the associated PNG image (`integrity-scan.png`) and investigate its pixel data for a concealed message.
+
+The image contains information encoded using least significant bit (LSB) steganography. Examine the blue color channel to recover the hidden message.
+
+**Question:** What date does the concealed message direct you to investigate next?
+
+*Hint: Browser-based steganography analysis tools may help you examine the image without installing additional software.*
+
+**8. The Final Verification — HTML Source and Base64**
+
+Navigate to the record identified by the hidden message in Challenge 7.
+
+Inspect the record's HTML source code for an archived verification token.
+
+The token is encoded using Base64.
+
+**Final Objective:** Decode the verification token and submit the complete flag in the format:
+
+`flag{...}`
+
+---
+
+## Recommended Investigation Tools
+
+- **Archive search:** Locate relevant documents using dates, names, and keywords.
+- **Browser developer tools / View Page Source:** Inspect HTML metadata and hidden comments.
+- **EXIF metadata viewers:** Examine information embedded in JPG files. Hint: use https://exif.tools/
+- **Steganography analysis tools:** Investigate concealed information within PNG pixel data. Hint: use https://www.aperisolve.com/
+- **Base64 decoders:** Decode encoded strings discovered during the investigation.
+
+You may use online tools or locally installed software. No access to the website's original source folder is required.
+
+## Challenge Rules
+
+1. Use only the fictional Northlake Archive website and its associated challenge files.
+2. Do not attempt to access unrelated systems or private information.
+3. Preserve downloaded images in their original format when analyzing metadata or hidden data.
+4. Record your answers for Challenges 1–7.
+5. Submit the exact final flag recovered in Challenge 8.
+
+**Disclaimer:** All individuals, therapy records, and events presented in this archive are fictional and intended solely for cybersecurity education. No real patient information is included.
+
+Good luck, investigators!
